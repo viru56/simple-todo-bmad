@@ -1,0 +1,17 @@
+FROM node:24-alpine
+
+WORKDIR /app
+
+COPY package.json package-lock.json ./
+COPY apps/server/package.json ./apps/server/
+COPY libs/shared/package.json ./libs/shared/
+RUN npm ci --ignore-scripts
+
+COPY . .
+
+RUN npx prisma generate --schema=apps/server/prisma/schema.prisma
+RUN npx nx build server
+
+EXPOSE 3001
+
+CMD ["sh", "-c", "./scripts/wait-for-postgres.sh db 5432 && npx prisma migrate deploy --schema=apps/server/prisma/schema.prisma && node apps/server/dist/main.js"]

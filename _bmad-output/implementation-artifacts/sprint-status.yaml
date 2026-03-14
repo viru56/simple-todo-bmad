@@ -1,0 +1,69 @@
+# generated: 2026-03-14
+# project: simple-todo-bmad
+# project_key: NOKEY
+# tracking_system: file-system
+# story_location: _bmad-output/implementation-artifacts
+
+# STATUS DEFINITIONS:
+# ==================
+# Epic Status:
+#   - backlog: Epic not yet started
+#   - in-progress: Epic actively being worked on
+#   - done: All stories in epic completed
+#
+# Epic Status Transitions:
+#   - backlog → in-progress: Automatically when first story is created (via create-story)
+#   - in-progress → done: Manually when all stories reach 'done' status
+#
+# Story Status:
+#   - backlog: Story only exists in epic file
+#   - ready-for-dev: Story file created in stories folder
+#   - in-progress: Developer actively working on implementation
+#   - review: Ready for code review (via Dev's code-review workflow)
+#   - done: Story completed
+#
+# Retrospective Status:
+#   - optional: Can be completed but not required
+#   - done: Retrospective has been completed
+#
+# WORKFLOW NOTES:
+# ===============
+# - Epic transitions to 'in-progress' automatically when first story is created
+# - Stories can be worked in parallel if team capacity allows
+# - SM typically creates next story after previous one is 'done' to incorporate learnings
+# - Dev moves story to 'review', then runs code-review (fresh context, different LLM recommended)
+
+generated: "2026-03-14"
+project: simple-todo-bmad
+project_key: NOKEY
+tracking_system: file-system
+story_location: _bmad-output/implementation-artifacts
+
+development_status:
+  epic-1: done
+  1-1-initialize-nx-monorepo-workspace-app-structure: done
+  1-2-configure-fastify-server-foundation-with-health-endpoint: review
+  1-3-define-todo-data-model-with-prisma: review
+  1-4-docker-compose-local-development-environment: review
+  1-5-configure-ci-cd-pipeline: review
+  epic-1-retrospective: optional
+
+  epic-2: done
+  2-1-todo-crud-api-endpoints: review
+  2-2-client-foundation-app-shell-state-store-api-service: review
+  2-3-todo-capture-input-with-optimistic-ui: review
+  2-4-todo-list-item-display: review
+  2-5-complete-reopen-delete-todo-actions: review
+  2-6-all-view-completed-view-with-empty-states: review
+  2-7-keyboard-accessibility-wcag-compliance-audit: review
+  epic-2-retrospective: optional
+
+  epic-3: done
+  3-1-edit-drawer-shell-open-close-layout: review
+  3-2-category-description-enrichment: review
+  3-3-due-date-importance-enrichment: review
+  3-4-edit-save-failure-recovery-inline-validation: review
+  3-5-important-view-tab: review
+  3-6-expiring-view-tab: review
+  3-7-category-filter-on-active-todos: review
+  epic-3-retrospective: optional
