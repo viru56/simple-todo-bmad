@@ -1,7 +1,7 @@
 /**
  * API tests for health and todos endpoints.
  * Uses Fastify inject() – no HTTP server needed.
- * Todo service is mocked so tests pass without a database.
+ * Todo service and Prisma are mocked so tests pass without a database in any env (e.g. CI).
  */
 // Ensure DATABASE_URL is set before any app code loads (required by config/env)
 process.env.DATABASE_URL =
@@ -16,6 +16,12 @@ import { todoService } from '../../services/todo.service';
 import { AppError } from '../../errors/appError';
 import { ErrorCodes } from '../../errors/errorCodes';
 import type { FastifyInstance } from 'fastify';
+
+// Mock Prisma so @prisma/client is never loaded (no "prisma generate" required in CI)
+vi.mock('../../lib/prisma', () => ({
+  prisma: { $disconnect: vi.fn() },
+  disconnectPrisma: vi.fn(),
+}));
 
 vi.mock('../../services/todo.service', () => ({
   todoService: {
