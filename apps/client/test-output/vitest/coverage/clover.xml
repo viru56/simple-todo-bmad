@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1773509436674" clover="3.2.0">
+  <project timestamp="1773509436674" name="All files">
+    <metrics statements="119" coveredstatements="118" conditionals="108" coveredconditionals="99" methods="61" coveredmethods="60" elements="288" coveredelements="277" complexity="0" loc="119" ncloc="119" packages="7" files="13" classes="13"/>
+    <package name="features.capture.components">
+      <metrics statements="16" coveredstatements="16" conditionals="8" coveredconditionals="6" methods="8" coveredmethods="8"/>
+      <file name="CreateTodoInput.tsx" path="/Users/virender/Documents/simple-todo-bmad/apps/client/src/features/capture/components/CreateTodoInput.tsx">
+        <metrics statements="16" coveredstatements="16" conditionals="8" coveredconditionals="6" methods="8" coveredmethods="8"/>
+        <line num="7" count="8" type="stmt"/>
+        <line num="11" count="8" type="stmt"/>
+        <line num="18" count="8" type="stmt"/>
+        <line num="20" count="8" type="stmt"/>
+        <line num="21" count="8" type="cond" truecount="3" falsecount="1"/>
+        <line num="22" count="8" type="stmt"/>
+        <line num="26" count="8" type="stmt"/>
+        <line num="27" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="33" count="8" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="37" count="8" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="65" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="features.feedback.components">
+      <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+      <file name="EmptyState.tsx" path="/Users/virender/Documents/simple-todo-bmad/apps/client/src/features/feedback/components/EmptyState.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="27" count="4" type="stmt"/>
+        <line num="29" count="4" type="stmt"/>
+      </file>
+      <file name="ErrorBanner.tsx" path="/Users/virender/Documents/simple-todo-bmad/apps/client/src/features/feedback/components/ErrorBanner.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="10" count="11" type="stmt"/>
+      </file>
+      <file name="LoadingState.tsx" path="/Users/virender/Documents/simple-todo-bmad/apps/client/src/features/feedback/components/LoadingState.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="features.todos.components">
+      <metrics statements="46" coveredstatements="45" conditionals="58" coveredconditionals="54" methods="23" coveredmethods="22"/>
+      <file name="TodoItem.tsx" path="/Users/virender/Documents/simple-todo-bmad/apps/client/src/features/todos/components/TodoItem.tsx">
+        <metrics statements="31" coveredstatements="30" conditionals="52" coveredconditionals="48" methods="15" coveredmethods="14"/>
+        <line num="16" count="19" type="stmt"/>
+        <line num="17" count="19" type="stmt"/>
+        <line num="18" count="19" type="stmt"/>
+        <line num="19" count="19" type="stmt"/>
+        <line num="20" count="19" type="stmt"/>
+        <line num="21" count="19" type="stmt"/>
+        <line num="23" count="19" type="stmt"/>
+        <line num="24" count="19" type="stmt"/>
+        <line num="25" count="19" type="stmt"/>
+        <line num="26" count="19" type="stmt"/>
+        <line num="28" count="19" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="34" count="19" type="stmt"/>
+        <line num="35" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="42" count="19" type="stmt"/>
+        <line num="61" count="3" type="stmt"/>
+        <line num="62" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="126" count="1" type="stmt"/>
+        <line num="127" count="1" type="stmt"/>
+        <line num="143" count="1" type="stmt"/>
+        <line num="144" count="1" type="stmt"/>
+        <line num="160" count="1" type="stmt"/>
+        <line num="161" count="1" type="stmt"/>
+        <line num="174" count="0" type="stmt"/>
+        <line num="176" count="2" type="stmt"/>
+        <line num="177" count="2" type="cond" truecount="2" falsecount="0"/>
+      </file>
+      <file name="TodoList.tsx" path="/Users/virender/Documents/simple-todo-bmad/apps/client/src/features/todos/components/TodoList.tsx">
+        <metrics statements="14" coveredstatements="14" conditionals="6" coveredconditionals="6" methods="7" coveredmethods="7"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="16" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="20" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="31" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="38" count="2" type="stmt"/>
+      </file>
+      <file name="TodoTimestamp.tsx" path="/Users/virender/Documents/simple-todo-bmad/apps/client/src/features/todos/components/TodoTimestamp.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="9" count="19" type="stmt"/>
+      </file>
+    </package>
+    <package name="features.todos.hooks">
+      <metrics statements="8" coveredstatements="8" conditionals="6" coveredconditionals="6" methods="5" coveredmethods="5"/>
+      <file name="useVisibleTodos.ts" path="/Users/virender/Documents/simple-todo-bmad/apps/client/src/features/todos/hooks/useVisibleTodos.ts">
+        <metrics statements="8" coveredstatements="8" conditionals="6" coveredconditionals="6" methods="5" coveredmethods="5"/>
+        <line num="7" count="8" type="stmt"/>
+        <line num="8" count="8" type="stmt"/>
+        <line num="9" count="8" type="stmt"/>
+        <line num="11" count="8" type="stmt"/>
+        <line num="12" count="8" type="stmt"/>
+        <line num="14" count="8" type="cond" truecount="4" falsecount="0"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="18" count="8" type="cond" truecount="2" falsecount="0"/>
+      </file>
+    </package>
+    <package name="features.todos.utils">
+      <metrics statements="9" coveredstatements="9" conditionals="8" coveredconditionals="7" methods="5" coveredmethods="5"/>
+      <file name="isTodoExpiring.ts" path="/Users/virender/Documents/simple-todo-bmad/apps/client/src/features/todos/utils/isTodoExpiring.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="5" count="22" type="cond" truecount="4" falsecount="0"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+      </file>
+      <file name="sortTodos.ts" path="/Users/virender/Documents/simple-todo-bmad/apps/client/src/features/todos/utils/sortTodos.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="3" methods="4" coveredmethods="4"/>
+        <line num="4" count="8" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="11" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="13" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="lib">
+      <metrics statements="15" coveredstatements="15" conditionals="10" coveredconditionals="9" methods="4" coveredmethods="4"/>
+      <file name="date.ts" path="/Users/virender/Documents/simple-todo-bmad/apps/client/src/lib/date.ts">
+        <metrics statements="14" coveredstatements="14" conditionals="10" coveredconditionals="9" methods="3" coveredmethods="3"/>
+        <line num="2" count="24" type="stmt"/>
+        <line num="3" count="24" type="stmt"/>
+        <line num="4" count="24" type="stmt"/>
+        <line num="5" count="24" type="stmt"/>
+        <line num="6" count="24" type="stmt"/>
+        <line num="7" count="24" type="stmt"/>
+        <line num="9" count="24" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+      </file>
+      <file name="utils.ts" path="/Users/virender/Documents/simple-todo-bmad/apps/client/src/lib/utils.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="57" type="stmt"/>
+      </file>
+    </package>
+    <package name="store">
+      <metrics statements="20" coveredstatements="20" conditionals="14" coveredconditionals="13" methods="13" coveredmethods="13"/>
+      <file name="selectors.ts" path="/Users/virender/Documents/simple-todo-bmad/apps/client/src/store/selectors.ts">
+        <metrics statements="20" coveredstatements="20" conditionals="14" coveredconditionals="13" methods="13" coveredmethods="13"/>
+        <line num="6" count="14" type="stmt"/>
+        <line num="10" count="8" type="stmt"/>
+        <line num="14" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="24" count="7" type="cond" truecount="4" falsecount="0"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="30" count="12" type="cond" truecount="4" falsecount="0"/>
+        <line num="32" count="8" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="38" count="2" type="stmt"/>
+        <line num="46" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="47" count="5" type="stmt"/>
+        <line num="51" count="4" type="stmt"/>
+        <line num="52" count="1" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="54" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="56" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

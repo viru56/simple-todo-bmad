@@ -32,11 +32,14 @@ export default defineConfig(() => ({
     watch: false,
     globals: true,
     environment: 'jsdom',
+    setupFiles: ['src/test-setup.ts'],
     include: ['{src,tests}/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
     reporters: ['default'],
     coverage: {
       reportsDirectory: './test-output/vitest/coverage',
       provider: 'v8' as const,
+      exclude: ['src/main.tsx', 'src/app/app.tsx', '**/*.spec.*', '**/*.test.*', 'src/test-setup.ts'],
+      thresholds: { statements: 90, branches: 75, functions: 90, lines: 90 },
     }
   },
 }));
