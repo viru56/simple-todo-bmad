@@ -1,5 +1,7 @@
 FROM node:24-alpine
 
+RUN apk add --no-cache postgresql-client
+
 WORKDIR /app
 
 COPY package.json package-lock.json ./
@@ -12,6 +14,12 @@ COPY . .
 RUN npx prisma generate --schema=apps/server/prisma/schema.prisma
 RUN npx nx build server
 
+RUN chown -R node:node /app
+USER node
+
 EXPOSE 3001
 
-CMD ["sh", "-c", "./scripts/wait-for-postgres.sh db 5432 && npx prisma migrate deploy --schema=apps/server/prisma/schema.prisma && node apps/server/dist/main.js"]
+HEALTHCHECK --interval=10s --timeout=5s --start-period=5s --retries=3 \
+  CMD wget -q -O - http://127.0.0.1:3001/health || exit 1
+
+CMD ["sh", "-c", "sh ./scripts/wait-for-postgres.sh db 5432 && npx prisma migrate deploy --schema=apps/server/prisma/schema.prisma && node apps/server/dist/main.js"]

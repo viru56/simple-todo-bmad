@@ -19,7 +19,7 @@ docker compose up
 ```
 
 The app will be available at:
-- **Frontend:** http://localhost:4200
+- **Frontend:** http://localhost:5173
 - **API:** http://localhost:3001
 - **Health check:** http://localhost:3001/health
 
@@ -52,6 +52,20 @@ apps/client/    - React + Vite frontend
 apps/server/    - Fastify REST API
 libs/shared/    - Shared types and constants
 ```
+
+## Testing
+
+- **Unit & integration:** `npm test` or `npm exec nx run-many -t test`
+- **Coverage:** `npm run test:coverage`
+- **E2E (Playwright):** Start the app (`npm run dev` or `docker compose up`), then `npm run e2e`
+
+See [_bmad-output/implementation-artifacts/tests/test-summary.md](_bmad-output/implementation-artifacts/tests/test-summary.md) for details.
+
+## Documentation
+
+- **Project brief & BMAD:** [_bmad-output/planning-artifacts/project-brief.md](_bmad-output/planning-artifacts/project-brief.md), [docs/BMAD-IMPLEMENTATION.md](docs/BMAD-IMPLEMENTATION.md)
+- **QA reports:** [docs/qa/](docs/qa/) (coverage, accessibility, security, performance)
+- **AI integration log:** [docs/AI-INTEGRATION-LOG.md](docs/AI-INTEGRATION-LOG.md)
 
 ## Tech Stack
 

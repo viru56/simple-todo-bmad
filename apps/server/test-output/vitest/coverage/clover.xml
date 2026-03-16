@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1773509435278" clover="3.2.0">
-  <project timestamp="1773509435279" name="All files">
-    <metrics statements="52" coveredstatements="52" conditionals="18" coveredconditionals="14" methods="16" coveredmethods="16" elements="86" coveredelements="82" complexity="0" loc="52" ncloc="52" packages="6" files="13" classes="13"/>
+<coverage generated="1773662573953" clover="3.2.0">
+  <project timestamp="1773662573953" name="All files">
+    <metrics statements="50" coveredstatements="50" conditionals="18" coveredconditionals="14" methods="15" coveredmethods="15" elements="83" coveredelements="79" complexity="0" loc="50" ncloc="50" packages="6" files="12" classes="12"/>
     <package name="config">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="constants.ts" path="/Users/virender/Documents/simple-todo-bmad/apps/server/src/config/constants.ts">
@@ -40,7 +40,7 @@
       </file>
     </package>
     <package name="lib">
-      <metrics statements="12" coveredstatements="12" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+      <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
       <file name="logger.ts" path="/Users/virender/Documents/simple-todo-bmad/apps/server/src/lib/logger.ts">
         <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
         <line num="6" count="2" type="stmt"/>
@@ -53,11 +53,6 @@
         <line num="26" count="4" type="stmt"/>
         <line num="28" count="1" type="stmt"/>
         <line num="31" count="3" type="stmt"/>
-      </file>
-      <file name="prisma.ts" path="/Users/virender/Documents/simple-todo-bmad/apps/server/src/lib/prisma.ts">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
       </file>
     </package>
     <package name="plugins">

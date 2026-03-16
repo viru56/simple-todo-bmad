@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1773509436674" clover="3.2.0">
-  <project timestamp="1773509436674" name="All files">
+<coverage generated="1773662575045" clover="3.2.0">
+  <project timestamp="1773662575045" name="All files">
     <metrics statements="119" coveredstatements="118" conditionals="108" coveredconditionals="99" methods="61" coveredmethods="60" elements="288" coveredelements="277" complexity="0" loc="119" ncloc="119" packages="7" files="13" classes="13"/>
     <package name="features.capture.components">
       <metrics statements="16" coveredstatements="16" conditionals="8" coveredconditionals="6" methods="8" coveredmethods="8"/>

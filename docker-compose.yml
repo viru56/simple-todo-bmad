@@ -1,3 +1,5 @@
+# Default: docker compose up (all services).
+# Test env: set NODE_ENV=test and DATABASE_URL to a test DB (e.g. .../todo_test) in .env.
 services:
   db:
     image: postgres:16-alpine
@@ -6,7 +8,7 @@ services:
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: todos
     ports:
-      - '5432:5432'
+      - '5433:5432'   # host 5433 to avoid conflict with local Postgres on 5432
     volumes:
       - pgdata:/var/lib/postgresql/data
     healthcheck:
@@ -23,16 +25,22 @@ services:
       - '3001:3001'
     environment:
       DATABASE_URL: postgresql://postgres:postgres@db:5432/todos
-      NODE_ENV: development
+      NODE_ENV: ${NODE_ENV:-development}
       HOST: 0.0.0.0
       PORT: '3001'
-      CORS_ORIGIN: http://localhost:4200
-      LOG_LEVEL: info
+      CORS_ORIGIN: ${CORS_ORIGIN:-http://localhost:5173}
+      LOG_LEVEL: ${LOG_LEVEL:-info}
     depends_on:
       db:
         condition: service_healthy
+    healthcheck:
+      test: ['CMD-SHELL', 'wget -q -O - http://127.0.0.1:3001/health || exit 1']
+      interval: 10s
+      timeout: 5s
+      start_period: 10s
+      retries: 3
     command: >
-      sh -c "./scripts/wait-for-postgres.sh db 5432 &&
+      sh -c "sh ./scripts/wait-for-postgres.sh db 5432 &&
              npx prisma migrate deploy --schema=apps/server/prisma/schema.prisma &&
              node apps/server/dist/main.js"
 
@@ -44,6 +52,12 @@ services:
       - '5173:5173'
     depends_on:
       - server
+    healthcheck:
+      test: ['CMD-SHELL', 'curl -f http://127.0.0.1:5173/ || exit 1']
+      interval: 10s
+      timeout: 5s
+      start_period: 5s
+      retries: 3
 
 volumes:
   pgdata:

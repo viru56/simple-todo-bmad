@@ -24,7 +24,7 @@ export const env = {
     return requiredEnv('DATABASE_URL');
   },
   get CORS_ORIGIN() {
-    return optionalEnv('CORS_ORIGIN', 'http://localhost:4200');
+    return optionalEnv('CORS_ORIGIN', 'http://localhost:5173');
   },
   get LOG_LEVEL() {
     return optionalEnv('LOG_LEVEL', 'info');
